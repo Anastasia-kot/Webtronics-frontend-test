@@ -1,0 +1,144 @@
+.contact {
+
+    min-height: 746px;
+    padding-bottom: 44px;
+    padding-left: 9px;
+
+    .contact__form {
+
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 56px 312px;
+        gap: 16px;
+        width: 1226px;
+        min-height: 600px;
+
+
+
+        /* Clean 5 */
+
+        background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)) padding-box,
+            linear-gradient(#0C102D, #0C102D) padding-box,
+            linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
+        border: 1px solid transparent;
+
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+
+
+        .form__title {
+            font-family: 'Clash Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 72px;
+            line-height: 120%;
+            /* or 86px */
+
+            text-align: center;
+
+            /* Clean */
+
+            color: #FFFFFF;
+
+        }
+
+        .form__subtitle {
+            margin-bottom: 7px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            /* or 22px */
+
+            text-align: center;
+
+            /* Clean */
+
+            color: #FFFFFF;
+        }
+
+        .form__input {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 24px;
+            gap: 10px;
+
+            width: 493px;
+            height: 70px;
+
+
+
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            /* or 22px */
+
+
+            /* text 40 */
+
+            color: #A2CBFB;
+
+
+
+            /* Clean 5 */
+            border-radius: 8px;
+
+            background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)) padding-box,
+                linear-gradient(#0C102D, #0C102D) padding-box,
+                linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
+            border: 1px solid transparent;
+
+        }
+
+        .form__button {
+            margin-top: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 24px 32px;
+            gap: 10px;
+
+            width: 497px;
+            height: 72px;
+
+
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            /* identical to box height, or 120% */
+
+            text-align: center;
+
+            /* Primary 100 */
+
+            color: #0A1482;
+
+            /* linear 2 */
+
+            background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+            border-radius: 8px;
+        }
+    }
+
+
+
+
+
+}

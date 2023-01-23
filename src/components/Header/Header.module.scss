@@ -1,0 +1,45 @@
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+    
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-bottom: 84px;
+
+    .header__logo {
+        padding-top: 5px;
+        padding-left: 10px; 
+
+        width: 180px;
+        height: 33px;
+    }
+
+    .header__navigation {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+
+ 
+ 
+
+
+        color: #FFFFFF;
+
+        .navigation__list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+
+            .list__item {
+                padding: 0 10px;
+            }
+        }
+    }
+}

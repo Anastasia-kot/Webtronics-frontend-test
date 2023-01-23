@@ -1,0 +1,186 @@
+.about {
+    min-height: 804px;
+    position: relative;
+
+    .about__title {
+        /* H2/72px */
+
+        font-family: 'Clash Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 120%;
+        /* or 86px */
+
+        text-align: center;
+
+        /* Clean */
+
+        color: #FFFFFF;
+        padding-left: 13px;
+        margin-bottom: 56px;
+    }
+
+    .about__content {
+        display: flex;
+        gap:6px;
+
+    }
+
+    .about__mentors {
+        width: 627px;
+        height: 483px;
+
+        .mentors__title {
+            /* H3/32px */
+
+            font-family: 'Clash Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 120%;
+            /* or 38px */
+
+            text-align: center;
+
+            /* Clean */
+
+            color: #FFFFFF;
+
+
+            margin-bottom: 10px;
+        }
+
+        svg {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .mentors__list {
+            position: relative;
+            top: -50px;
+            left: 10px;
+            display: flex;
+            height: 323px;
+            width: 627px;
+            list-style: none;
+
+            .list__item {
+ 
+                .item__image {
+                    width: 186px;
+                    height: 186px;
+                    overflow: hidden;
+                    margin-bottom: 18px;
+
+                    border-radius: 50%;
+
+
+
+                    background: linear-gradient(black, white) padding-box,
+                        linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
+
+                    border: 2px solid transparent;
+
+
+
+                    img {
+
+                        height: auto;
+                        object-fit: contain;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+
+                .item__title {
+                    margin-bottom: 5px;
+
+                    font-family: 'Clash Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 120%;
+                    /* identical to box height, or 29px */
+
+                    text-align: left;
+
+                    /* Clean */
+
+                    color: #FFFFFF;
+                }
+
+                .item__description {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    // line-height: 140%;
+                    /* or 20px */
+
+
+                    /* Clean */
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .list__item:first-child {
+                align-self: flex-end;
+
+                .item__image {
+                    img {
+                        width: 255px;
+                        object-position: -12px -3px;
+                    }
+                }
+
+            }
+
+            .list__item:nth-child(2) {
+                align-self: flex-start;
+
+                .item__image {
+                    img {
+                        width: 190px;
+                        object-position: -2px -17px;
+
+                    }
+                }
+            }
+
+            .list__item:last-child {
+                align-self: flex-end;
+
+                .item__image {
+                    img {
+                        width: 230px;
+                        object-position: -23px 0px;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+    .about__description {
+        margin-top: 110px;
+        width: 486px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+
+        /* Clean */
+
+        color: #FFFFFF;
+    }
+}

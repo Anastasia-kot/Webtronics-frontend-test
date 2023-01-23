@@ -1,0 +1,203 @@
+.review {
+    min-height: 792px;
+        position: relative;
+            left: -10px;
+ 
+    .review__title {
+         margin-bottom: 48px;
+  
+        
+        font-family: 'Clash Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 120%;
+        /* or 86px */
+
+        text-align: center;
+
+        /* Clean */
+
+        color: #FFFFFF;
+    }
+
+    .review__arrows {
+        height: 40px;
+        display: flex;
+        gap: 25px;
+        justify-content: flex-end;
+        margin-bottom: 16px;
+        margin-right: 3px;
+
+        .arrows__item {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.05);
+            background: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 19.5L1.5 10L11 0.5' stroke='white'/%3E%3C/svg%3E%0A"),
+                linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)) padding-box,
+                linear-gradient(#0C102D, #0C102D) padding-box,
+                linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
+            border: 1px solid transparent;
+            ;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        .arrows__item:last-of-type {
+            transform: rotate(180deg);
+        }
+    }
+
+
+    .review__list {
+        list-style: none;
+        display: flex;
+        position: relative;
+        padding-left: 418px;
+        gap: 24px;
+
+        .list__item {
+            order: 1;
+
+
+            .item__index {
+                display: none;
+            }
+
+            .item__image {
+                background: #FFFFFF;
+                backdrop-filter: blur(5px);
+                /* Note: backdrop-filter has minimal browser support */
+                object-fit: cover;
+                border-radius: 16px;
+                width: 184px;
+                height: 422px;
+                background: linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
+
+                border: 2px solid transparent;
+                display: block;
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%, 0 0);
+            }
+
+      
+
+            .item__title {
+                display: none;
+
+
+            }
+
+            .item__description {
+                display: none;
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+            &.active {
+                order: 0;
+
+                .item__index {
+                    display: block;
+                    position: absolute;
+                    top: -55px;
+                    left: 420px;
+                    font-family: 'Clash Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 120%;
+                    /* identical to box height, or 29px */
+
+                    text-align: center;
+
+                    /* Clean */
+
+                    color: #FFFFFF;
+                    span {
+                        font-size: 16px;
+                        vertical-align: super;
+                    }
+                }
+
+                .item__image {
+                    width: 392px;
+                    height: 422px;
+                    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0 0);
+                }
+
+                .item__title {
+                    display: block;
+                    position: absolute;
+                    top: 68px;
+                    left: 2px;
+
+
+                    font-family: 'Clash Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 120%;
+                    /* identical to box height, or 29px */
+
+
+                    /* Clean */
+
+                    color: #FFFFFF;
+                }
+
+                .item__description {
+                    display: block;
+                    width: 392px;
+                    position: absolute;
+                    top: 115px;
+                    left: 2px;
+
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    /* or 22px */
+
+
+                    /* Clean */
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .list__item:first-child {
+                .item__image {
+                        object-position: 52% 50%;
+                    }
+        }
+
+        .list__item:nth-child(2) {
+                .item__image {
+                        object-position: 65% 50%;
+                        
+                     }
+        }
+        .list__item:last-child {
+                .item__image {
+                        object-position: 90% 50%;
+                    }
+        }
+
+
+    }
+
+}

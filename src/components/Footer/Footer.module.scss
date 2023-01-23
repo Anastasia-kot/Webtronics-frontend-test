@@ -1,0 +1,111 @@
+.footer {
+    padding-top: 34px;
+    min-height: 195px;
+    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)) padding-box,
+        linear-gradient(#0C102D, #0C102D) padding-box,
+        linear-gradient(152.14deg, rgba(21, 191, 253, 0.7) 9.96%, rgba(156, 55, 253, 0.7) 100%) border-box;
+    border: 1px solid transparent;
+    backdrop-filter: blur(5px);
+    
+
+
+.footer__columns{
+        width: 1226px;
+        display: flex;
+        gap: 195px;
+        margin: 0 auto;
+}
+    .footer__column:first-child {
+        padding-left: 10px;
+        width: 237px;
+
+        .footer__logo {
+
+            margin-bottom: 23px;
+
+            width: 180px;
+            height: 33px;
+        }
+
+        .footer__address {
+
+            width: 231px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            /* Clean */
+
+            color: #FFFFFF;
+        }
+    }
+
+    .footer__column {
+
+        .column__title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+
+
+            /* Clean */
+
+            color: #FFFFFF;
+
+
+            margin-bottom: 20px;
+        }
+
+        .column__list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .list__item {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                /* Clean */
+
+                color: #FFFFFF;
+
+                .item__image {}
+            }
+        }
+    }
+
+    .footer__column:nth-child(2) {
+        padding-right: 40px;
+        width: 239px;
+
+        .column__list {
+            flex-direction: column;
+            height: 100px;
+
+            .list__item {
+                margin-right: 125px;
+            }
+
+        }
+    }
+
+    .footer__column:last-child {
+        width: 395px;
+
+        .column__list {}
+
+
+
+    }
+}

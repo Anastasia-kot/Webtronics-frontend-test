@@ -1,0 +1,103 @@
+.technologies {
+    min-height: 700px;
+    padding-left: 11px;
+
+    .technologies__title {
+        width: 543px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+
+        font-family: 'Clash Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 120%;
+        /* or 86px */
+        text-align: center;
+
+        /* Clean */
+
+        color: #FFFFFF;
+    }
+
+    .technologies__subtitle {
+        width: 443px;
+        margin: 0 auto;
+        margin-bottom: 53px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        text-align: center;
+
+        /* Clean */
+
+        color: #FFFFFF;
+    }
+
+
+    .technologies__list { 
+        gap: 24px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        .list__item {
+            width: 182px;
+            height: 230px;
+            padding-top: 24px;
+
+
+            backdrop-filter: blur(5px);
+            /* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 16px;
+            background:
+                    linear-gradient(-39deg, transparent 0 10%, rgba(255, 255, 255, 0.051) 10% 100%) padding-box,
+                    linear-gradient(-39deg, transparent 0 10%, #0C102D 10%  100%) padding-box,
+                    linear-gradient(141deg, transparent 0, rgba(21, 191, 253, 0.7) 5%, rgba(156, 55, 253, 0.7) 90%, transparent 90% 100%) border-box,
+                    linear-gradient(-39deg, transparent 0 10%, #aeb0c3 10%  100%) border-box
+                    ;
+                border: 1px solid transparent; 
+
+
+
+
+            .item__image {
+                object-fit: cover;
+                width: 162px;
+                height: 136px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 15px;
+             }
+
+            .item__title {
+
+
+
+                font-family: 'Clash Display';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 120%;
+                /* identical to box height, or 29px */
+
+                text-align: center;
+
+                /* Clean */
+
+                color: #FFFFFF;
+            }
+
+        
+        
+    
+        
+    }
+    }
+
+}
