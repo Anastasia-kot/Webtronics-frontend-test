@@ -23,7 +23,7 @@
 
     .about__content {
         display: flex;
-        gap:6px;
+        gap: 6px;
 
     }
 
@@ -66,7 +66,7 @@
             list-style: none;
 
             .list__item {
- 
+
                 .item__image {
                     width: 186px;
                     height: 186px;
@@ -182,5 +182,93 @@
         /* Clean */
 
         color: #FFFFFF;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1921px) {
+        /* 1920px and more — Extra large screens,  TV */
+    }
+
+    @media (max-width: 1920px) {
+
+        /* 1201px — 1920px: Extra large screens,  TV */
+        .about__content {
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        /* 1025px — 1200px: Desktops, large screens */margin-bottom: 100px;
+    }
+
+    @media (max-width: 1024px) {
+        /* 769px — 1024px: Small screens, laptops */margin-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+        /* 481px — 768px: iPads,Tablets */
+                margin-bottom: 100px;
+    }
+
+    @media (max-width: 480px) {
+
+         margin-bottom: 100px;
+        padding: 0 10px;
+
+        .about__title {
+            font-size: 60px;
+        }
+
+        .about__mentors {
+            height: auto;
+            width: auto;
+
+            svg {
+                display: none;
+            }
+
+            .mentors__list {
+                position: static;
+                gap: 40px;
+                flex-direction: column;
+                align-items: center;
+
+                height: auto;
+                width: auto;
+            }
+
+            .list__item:nth-child(n) {
+                width: min-content;
+            }
+        }
     }
 }

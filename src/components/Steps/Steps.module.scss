@@ -121,7 +121,7 @@
             }
 
             .item__subtitle {
-               font-family: 'Clash Display';
+                font-family: 'Clash Display';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 24px;
@@ -136,7 +136,8 @@
                 order: 1;
             }
 
-            .item__description {width: 408px;
+            .item__description {
+                width: 408px;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
@@ -152,32 +153,34 @@
             }
 
         }
-li:nth-child(2n) {
-    grid-column: 3/4;
 
-    .item__border {
-        left: -20px;
-        transform: rotate(180deg);
-    }
+        li:nth-child(2n) {
+            grid-column: 3/4;
 
-    &::after {
+            .item__border {
+                left: -20px;
+                transform: rotate(180deg);
+            }
 
-        background-position: left, right;
-        background-image:
-            url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z' fill='%233B48D0'/%3E%3C/svg%3E%0A"),
-            url("data:image/svg+xml,%3Csvg width='82' height='6' viewBox='0 0 82 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M75.5938 4.80961e-06L82 3L75.5938 6L75.5938 3.51962L72.6818 3.51962L72.6818 2.48039L75.5938 2.48039L75.5938 4.80961e-06ZM65.2273 2.48039L68.9545 2.48039L68.9545 3.51962L65.2273 3.51962L65.2273 2.48039ZM57.7727 2.48039L61.5 2.48039L61.5 3.51962L57.7727 3.51962L57.7727 2.48039ZM50.3182 2.48039L54.0455 2.48039L54.0455 3.51962L50.3182 3.51962L50.3182 2.48039ZM42.8636 2.48039L46.5909 2.48039L46.5909 3.51962L42.8636 3.51961L42.8636 2.48039ZM35.4091 2.48038L39.1364 2.48039L39.1364 3.51961L35.4091 3.51961L35.4091 2.48038ZM27.9545 2.48038L31.6818 2.48038L31.6818 3.51961L27.9545 3.51961L27.9545 2.48038ZM20.5 2.48038L24.2273 2.48038L24.2273 3.51961L20.5 3.51961L20.5 2.48038ZM13.0454 2.48038L16.7727 2.48038L16.7727 3.51961L13.0454 3.51961L13.0454 2.48038ZM5.59089 2.48038L9.31816 2.48038L9.31816 3.51961L5.59089 3.51961L5.59089 2.48038ZM3.95607e-07 2.48038L1.86362 2.48038L1.86362 3.51961L2.78797e-07 3.51961L3.95607e-07 2.48038Z' fill='url(%23paint0_linear_48_241)' fill-opacity='0.7'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_48_241' x1='72.98' y1='5.43521' x2='72.6611' y2='-2.81034' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2315BFFD'/%3E%3Cstop offset='1' stop-color='%239C37FD'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-        position: absolute;
-        top: calc(50% - 12px);
-        left: - (40px + 104px);
+            &::after {
+
+                background-position: left, right;
+                background-image:
+                    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z' fill='%233B48D0'/%3E%3C/svg%3E%0A"),
+                    url("data:image/svg+xml,%3Csvg width='82' height='6' viewBox='0 0 82 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M75.5938 4.80961e-06L82 3L75.5938 6L75.5938 3.51962L72.6818 3.51962L72.6818 2.48039L75.5938 2.48039L75.5938 4.80961e-06ZM65.2273 2.48039L68.9545 2.48039L68.9545 3.51962L65.2273 3.51962L65.2273 2.48039ZM57.7727 2.48039L61.5 2.48039L61.5 3.51962L57.7727 3.51962L57.7727 2.48039ZM50.3182 2.48039L54.0455 2.48039L54.0455 3.51962L50.3182 3.51962L50.3182 2.48039ZM42.8636 2.48039L46.5909 2.48039L46.5909 3.51962L42.8636 3.51961L42.8636 2.48039ZM35.4091 2.48038L39.1364 2.48039L39.1364 3.51961L35.4091 3.51961L35.4091 2.48038ZM27.9545 2.48038L31.6818 2.48038L31.6818 3.51961L27.9545 3.51961L27.9545 2.48038ZM20.5 2.48038L24.2273 2.48038L24.2273 3.51961L20.5 3.51961L20.5 2.48038ZM13.0454 2.48038L16.7727 2.48038L16.7727 3.51961L13.0454 3.51961L13.0454 2.48038ZM5.59089 2.48038L9.31816 2.48038L9.31816 3.51961L5.59089 3.51961L5.59089 2.48038ZM3.95607e-07 2.48038L1.86362 2.48038L1.86362 3.51961L2.78797e-07 3.51961L3.95607e-07 2.48038Z' fill='url(%23paint0_linear_48_241)' fill-opacity='0.7'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_48_241' x1='72.98' y1='5.43521' x2='72.6611' y2='-2.81034' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2315BFFD'/%3E%3Cstop offset='1' stop-color='%239C37FD'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+                position: absolute;
+                top: calc(50% - 12px);
+                left: - (40px + 104px);
 
 
-    }
+            }
 
-}
+        }
 
-li:nth-child(2n-1) {
-    grid-column: 1/2;
-}
+        li:nth-child(2n-1) {
+            grid-column: 1/2;
+        }
+
         li:nth-child(1) {
             grid-row: 1/3;
         }
@@ -206,4 +209,277 @@ li:nth-child(2n-1) {
 
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1921px) {
+        /* 1920px and more — Extra large screens,  TV */
+    }
+
+    @media (max-width: 1920px) {
+
+        /* 1201px — 1920px: Extra large screens,  TV */
+    padding: 0 15px;
+    
+        .steps__list {
+            width: 1170px;
+            margin: 0 auto;
+    
+            .list__item {
+                width: 455px;
+    
+                .item__title {
+                    font-size: 26px;
+                }
+    
+                .item__description {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        /* 1025px — 1200px: Desktops, large screens */
+        padding: 0 15px;
+
+        .steps__list {
+            width: 995px;
+            margin: 0 auto;
+
+            .list__item {
+                width: 365px;
+
+                .item__title {
+                    font-size: 26px;line-height: 110%;
+                }
+
+                .item__description {
+                    width: 100%;
+                    font-size: 14px;line-height: 100%;
+                }
+            }
+        }
+
+
+    }
+
+    @media (max-width: 1024px) {
+        /* 769px — 1024px: Small screens, laptops */
+
+        margin-bottom: 140px;
+
+        .steps__list {
+            width: 100%;
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            padding-left: 180px;
+            height: auto;
+            gap: 80px;
+
+            &::before {
+                // display: none;
+                position: absolute;
+                left: 800px;
+                height: 1350px;
+
+            }
+
+            .list__item {
+                width: 475px;
+            }
+
+            .list__item:nth-child(2n) {
+
+                &::after {
+                    content: '';
+                    width: 104px;
+                    height: 24px;
+                    display: block;
+
+                    background-repeat: no-repeat;
+                    background-position: right, left;
+                    background-image:
+                        url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z' fill='%233B48D0'/%3E%3C/svg%3E%0A"),
+                        url("data:image/svg+xml,%3Csvg width='76' height='6' viewBox='0 0 76 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.9375 5.99999L-6.22886e-07 2.99999L5.9375 8.74228e-07L5.9375 2.48038L8.63636 2.48038L8.63636 3.51961L5.9375 3.51961L5.9375 5.99999ZM15.5455 3.51961L12.0909 3.51961L12.0909 2.48038L15.5455 2.48038L15.5455 3.51961ZM22.4545 3.51961L19 3.51961L19 2.48038L22.4545 2.48038L22.4545 3.51961ZM29.3636 3.51961L25.9091 3.51961L25.9091 2.48038L29.3636 2.48038L29.3636 3.51961ZM36.2727 3.51961L32.8182 3.51961L32.8182 2.48039L36.2727 2.48039L36.2727 3.51961ZM43.1818 3.51962L39.7273 3.51961L39.7273 2.48039L43.1818 2.48039L43.1818 3.51962ZM50.0909 3.51962L46.6364 3.51962L46.6364 2.48039L50.0909 2.48039L50.0909 3.51962ZM57 3.51962L53.5455 3.51962L53.5455 2.48039L57 2.48039L57 3.51962ZM63.9091 3.51962L60.4546 3.51962L60.4546 2.48039L63.9091 2.48039L63.9091 3.51962ZM70.8182 3.51962L67.3637 3.51962L67.3637 2.48039L70.8182 2.48039L70.8182 3.51962ZM76 3.51962L74.2728 3.51962L74.2728 2.48039L76 2.48039L76 3.51962Z' fill='url(%23paint0_linear_48_239)' fill-opacity='0.7'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_48_239' x1='8.36' y1='0.564792' x2='8.70401' y2='8.80831' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2315BFFD'/%3E%3Cstop offset='1' stop-color='%239C37FD'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+                    position: absolute;
+
+                    top: calc(50% - 12px);
+                    right: - (40px + 104px);
+                    left: auto;
+                }
+
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* 481px — 768px: iPads,Tablets */
+        margin-bottom: 140px;
+
+        .steps__list {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+            padding: 0;
+
+            &::before {
+                display: none;
+            }
+
+            .list__item:nth-child(n) {
+
+                &::after {
+                    display: none;
+                }
+
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        height: auto;
+        margin-bottom: 100px;
+        padding: 0 10px;
+
+        .steps__title {
+            font-size: 45px;
+            width: auto;
+        }
+
+
+
+        .steps__list {
+
+
+            gap: 40px;
+            padding: 0 20px;
+
+            &::before {
+                display: none;
+            }
+
+            .list__item:nth-child(n) {
+                width: 90%;
+
+                font-size: smaller;
+
+                &::after {
+                    display: none;
+                }
+
+
+
+                .item__title {
+
+                    font-size: 24px;
+                    line-height: 120%;
+                    /* or 38px */
+
+
+
+                }
+
+                .item__subtitle {
+
+                    font-size: 16px;
+                    line-height: 100%;
+                    /* identical to box height, or 29px */
+
+
+
+                }
+
+                .item__description {
+                    width: 100%;
+
+                    font-size: 14px;
+                    line-height: 120%;
+                    /* or 22px */
+
+                }
+
+
+            }
+        }
+
+    }
 }

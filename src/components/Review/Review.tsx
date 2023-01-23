@@ -52,9 +52,10 @@ export const Review = () => {
                     <li key={review.indexOf(i)} 
                         className={classNames(styles.list__item, { [styles.active]: activeItem === review.indexOf(i) })}>
                         <span className={styles.item__index}>{review.indexOf(i) + 1}/   <span> 3</span></span>
+                        <h4 className={styles.item__title} >{i.name}</h4>
+                        <p className={styles.item__description}>{i.description}</p> 
                             <img src={`/images/${i.img}`} alt="reviewer photo" className={styles.item__image} onClick={() => { setActiveItem(review.indexOf(i))}}/>
-                            <h4 className={styles.item__title} >{i.name}</h4>
-                            <p className={styles.item__description}>{i.description}</p> 
+                           
                     </li>)}
             </ul>
 

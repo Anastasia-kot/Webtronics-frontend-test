@@ -1,12 +1,12 @@
 .review {
     min-height: 792px;
-        position: relative;
-            left: -10px;
- 
+    position: relative;
+    left: -10px;
+
     .review__title {
-         margin-bottom: 48px;
-  
-        
+        margin-bottom: 48px;
+
+
         font-family: 'Clash Display';
         font-style: normal;
         font-weight: 600;
@@ -80,7 +80,7 @@
                 clip-path: polygon(0 0, 100% 0, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0 100%, 0 0);
             }
 
-      
+
 
             .item__title {
                 display: none;
@@ -125,6 +125,7 @@
                     /* Clean */
 
                     color: #FFFFFF;
+
                     span {
                         font-size: 16px;
                         vertical-align: super;
@@ -180,22 +181,373 @@
         }
 
         .list__item:first-child {
-                .item__image {
-                        object-position: 52% 50%;
-                    }
+            .item__image {
+                object-position: 52% 50%;
+            }
         }
 
         .list__item:nth-child(2) {
-                .item__image {
-                        object-position: 65% 50%;
-                        
-                     }
+            .item__image {
+                object-position: 65% 50%;
+
+            }
         }
+
         .list__item:last-child {
-                .item__image {
-                        object-position: 90% 50%;
-                    }
+            .item__image {
+                object-position: 90% 50%;
+            }
         }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1921px) {
+        /* 1920px and more — Extra large screens,  TV */
+    }
+
+    @media (max-width: 1920px) {
+
+        /* 1201px — 1920px: Extra large screens,  TV */
+        padding: 0 15px;
+
+        .review__content {
+            width: 1170px;
+            margin: 0 auto;
+
+            .review__aside {
+                width: 496px;
+                text-align: center;
+
+                .aside__description {
+                    margin: 0 auto;
+                }
+
+                .aside__image {
+                    top: -900px;
+                    left: -400px;
+                }
+
+            }
+
+            .review__list {
+                width: 500px;
+
+                .list__item {
+                    width: 100%;
+                }
+            }
+
+
+        }
+    }
+
+    @media (max-width: 1200px) {
+        /* 1025px — 1200px: Desktops, large screens */
+        padding: 0 15px;
+
+
+
+
+        .review__content {
+            width: 995px;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+
+
+            .review__aside {
+                width: 30%;
+                position: relative;
+                height: 400px;
+
+                .aside__description {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .aside__image {
+                    position: absolute;
+                    width: 1000px;
+                    left: -200px;
+                    top: -450px;
+                }
+            }
+
+            .review__list {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+    @media (max-width: 1024px) {
+        /* 769px — 1024px: Small screens, laptops */
+
+
+        .review__content {
+            width: 100%;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            .review__aside {
+                width: 30%;
+                position: relative;
+                height: 400px;
+
+                .aside__description {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .aside__image {
+                    position: absolute;
+                    width: 1000px;
+                    left: -200px;
+                    top: -450px;
+                }
+            }
+
+            .review__list {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        /* 481px — 768px: iPads,Tablets */
+        margin-bottom: 140px;
+
+
+
+        .review__content {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .review__aside {
+                width: 100%;
+                position: relative;
+                height: 400px;
+
+                .aside__description {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .aside__image {
+                    position: absolute;
+                    width: 1000px;
+                    left: 0px;
+                    top: -450px;
+                }
+            }
+
+            .review__list {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // gap: 40px;
+                padding: 0;
+
+            }
+        }
+
+
+    }
+
+    @media (max-width: 480px) {
+
+        height: auto;
+        margin-bottom: 100px;
+        padding: 0 10px;
+
+        .review__title {
+            font-size: 45px;
+            width: auto;
+        }
+
+
+        .review__arrows {
+            justify-content: center;
+        }
+
+        .review__list {
+            padding-left: 0;
+             flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+
+            .list__item {
+                width: 150px;
+                height: 300px;
+                .item__image{width: 150px;
+                    height: 300px;}
+ 
+
+                &.active {
+                    width: 300px;
+                    height: min-content;
+ 
+                    order: 0;
+
+                    .item__index {
+                    position: static;
+ 
+                      
+
+                      
+                    }
+
+                    .item__image {
+                        width: 300px;
+                        height: 300px;
+                        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0 0);
+                    }
+
+                    .item__title {
+                position: static;width: 90%; margin: 0 auto ;margin-bottom: 10px;
+                       
+
+ 
+                    }
+
+                    .item__description {
+position: static; width: 90%; margin: 0 auto;
+margin-bottom: 30px;
+                      
+
+                      }
+                }
+            }
+
+        }
+
+
 
 
     }

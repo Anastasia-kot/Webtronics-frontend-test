@@ -39,7 +39,7 @@
     }
 
 
-    .technologies__list { 
+    .technologies__list {
         gap: 24px;
         display: flex;
         justify-content: center;
@@ -56,12 +56,11 @@
 
             border-radius: 16px;
             background:
-                    linear-gradient(-39deg, transparent 0 10%, rgba(255, 255, 255, 0.051) 10% 100%) padding-box,
-                    linear-gradient(-39deg, transparent 0 10%, #0C102D 10%  100%) padding-box,
-                    linear-gradient(141deg, transparent 0, rgba(21, 191, 253, 0.7) 5%, rgba(156, 55, 253, 0.7) 90%, transparent 90% 100%) border-box,
-                    linear-gradient(-39deg, transparent 0 10%, #aeb0c3 10%  100%) border-box
-                    ;
-                border: 1px solid transparent; 
+                linear-gradient(-39deg, transparent 0 10%, rgba(255, 255, 255, 0.051) 10% 100%) padding-box,
+                linear-gradient(-39deg, transparent 0 10%, #0C102D 10% 100%) padding-box,
+                linear-gradient(141deg, transparent 0, rgba(21, 191, 253, 0.7) 5%, rgba(156, 55, 253, 0.7) 90%, transparent 90% 100%) border-box,
+                linear-gradient(-39deg, transparent 0 10%, #aeb0c3 10% 100%) border-box;
+            border: 1px solid transparent;
 
 
 
@@ -73,7 +72,7 @@
                 display: block;
                 margin: 0 auto;
                 margin-bottom: 15px;
-             }
+            }
 
             .item__title {
 
@@ -93,11 +92,105 @@
                 color: #FFFFFF;
             }
 
-        
-        
-    
-        
-    }
+
+
+
+
+        }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1921px) {
+        /* 1920px and more — Extra large screens,  TV */
+    }
+
+    @media (max-width: 1920px) {
+
+
+        /* 1201px — 1920px: Extra large screens,  TV */
+        .technologies__list {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    @media (max-width: 1200px) {
+        /* 1025px — 1200px: Desktops, large screens */
+    }
+
+    @media (max-width: 1024px) {
+        /* 769px — 1024px: Small screens, laptops */
+    }
+
+    @media (max-width: 768px) {
+        /* 481px — 768px: iPads,Tablets */margin-bottom: 100px;
+    }
+
+    @media (max-width: 480px) {
+
+        height: auto;
+        margin-bottom: 100px;
+        padding: 0 10px;
+
+        .technologies__title {
+            font-size: 45px;
+            width: auto;
+        }
+        .technologies__subtitle {
+            width: auto;
+        }
+
+
+
+        .technologies__list {
+
+
+
+            .list__item:nth-child(n) {
+                width: min-content;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                .item__image {
+                    width: 120px;
+                    height: 100px;
+
+                }
+            }
+        }
+
+    }
 }
