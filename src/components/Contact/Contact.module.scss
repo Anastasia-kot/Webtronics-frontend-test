@@ -141,4 +141,166 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+                @media (min-width: 1921px) {
+        
+                    /* 1920px and more — Extra large screens,  TV */
+                 }
+        
+                @media (max-width: 1920px) {
+        
+                    /* 1201px — 1920px: Extra large screens,  TV */
+            /* 481px — 768px: iPads,Tablets */
+            
+            
+                height: auto;
+            
+                width: 100%;
+                box-sizing: border-box;
+            
+                min-height: auto;
+                // padding-bottom: 44px;
+                padding-left: 0px;
+            
+                .contact__form {
+                    width: 95%;
+                    min-width: 95%;
+                    max-width: 1226px;
+                    margin: 0 auto;
+            
+            
+                    padding: 56px 20px;
+            
+                    min-height: auto;
+            
+                    .form__input {
+            
+                        padding: 24px;
+                        gap: 10px;
+            
+                        width: 493px;
+                        height: 70px;
+            
+            
+            
+                        font-size: 16px;
+                        line-height: 140%;
+            
+            
+                    }
+            
+                    .form__button {
+            
+                        padding: 24px 32px;
+                        gap: 10px;
+            
+                        width: 497px;
+                        height: 72px;
+            
+            
+            
+            
+                        font-size: 20px;
+                        line-height: 24px;
+                        /* identical to box height, or 120% */
+            
+            
+                    }
+                }
+            
+                /* 320px — 480px: Mobile devices */
+                }
+        
+                @media (max-width: 1200px) {
+        
+                    /* 1025px — 1200px: Desktops, large screens */
+                  
+                }
+        
+                @media (max-width: 1024px) {
+        
+                    /* 769px — 1024px: Small screens, laptops */
+                    
+                    
+                    
+                }
+        
+        
+        
+        
+        
+        
+                @media (max-width: 768px) {}
+        
+                @media (max-width: 480px) {
+        
+                    height: auto;
+  
+                    width: 100%;
+                    box-sizing: border-box;
+
+                    min-height: auto;
+                        // padding-bottom: 44px;
+                        padding-left: 0px;
+
+                    .contact__form{
+                         width: 95%;
+                        min-width: 95%;
+                        margin: 0 auto;
+
+box-sizing: border-box;
+                            padding: 56px 20px;
+ 
+                                min-height: auto;
+                    .form__title{font-size: 45px;}
+                    .form__input {
+                         
+                            padding: 24px;
+                            gap: 10px;
+                    
+                            width: 90%;
+                            height: 70px;
+                    
+                    
+                     
+                            font-size: 16px;
+                            line-height: 140%;
+                  
+                    
+                        }
+                    
+                        .form__button {
+                           
+                            padding: 24px 32px;
+                            gap: 10px;
+                    
+                            width: 90%;
+                            height: 72px;
+                    
+                    
+                     
+                        
+                            font-size: 20px;
+                            line-height: 24px;
+                            /* identical to box height, or 120% */
+                    
+                     
+                        }
+                            } 
+        
+                    /* 320px — 480px: Mobile devices */
+                   
+                  
+        
+                }
+
 }

@@ -108,4 +108,17 @@
 
 
     }
+
+
+        @media (min-width: 1921px) {/* 1920px and more — Extra large screens,  TV */}
+    
+        @media (max-width: 1920px) {/* 1201px — 1920px: Extra large screens,  TV */}
+    
+        @media (max-width: 1200px) {/* 1025px — 1200px: Desktops, large screens */}
+    
+        @media (max-width: 1024px) {/* 769px — 1024px: Small screens, laptops */}
+    
+        @media (max-width: 768px) {/* 481px — 768px: iPads,Tablets */}
+    
+        @media (max-width: 480px) { /* 320px — 480px: Mobile devices */}
 }

@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import styles from './FAQ.module.scss'
 
 
@@ -26,11 +26,11 @@ const questions = [
      },
   ]
 
-export const Questions = () => {
+export const Questions: FC = React.memo(() => {
     
     const [activeItems, setActiveItems] = useState<number[]>([0])
     
-    const onClick = (i: number) => {
+    const onClick = (i: number): void => {
         const index = activeItems.indexOf(i)
         if (index > -1) {
             setActiveItems(
@@ -67,4 +67,4 @@ export const Questions = () => {
        
     </section>
     )
-}
+})

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import styles from './Header.module.scss'
 
-export const Header = () => {
+export const Header: FC = React.memo(() => {
     return( 
     <header className={styles.header}>
         <div className={styles.header__logo}>
@@ -33,4 +33,4 @@ export const Header = () => {
         </nav>
     </header>
     )
-}
+})

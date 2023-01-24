@@ -1,11 +1,11 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import styles from './Gallery.module.scss'
 
 
 
 
-export const Gallery = () => {
+export const Gallery: FC = React.memo(() => {
 
     return (
         <section className={styles.gallery}>
@@ -24,4 +24,4 @@ export const Gallery = () => {
 
         </section>
     )
-}
+})

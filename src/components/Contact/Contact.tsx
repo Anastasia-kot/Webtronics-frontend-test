@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import styles from './Contact.module.scss'
 import { useForm } from "react-hook-form"; 
 import * as yup from "yup";
@@ -22,7 +22,7 @@ const schema = yup.object({
 }).required();
 
 
-export const Contact = React.memo(() => {
+export const Contact: FC = React.memo(() => {
 
  
 
@@ -33,7 +33,7 @@ export const Contact = React.memo(() => {
 
     });
 
-    const onSubmit = (data: IFormInputs) => {
+    const onSubmit = (data: IFormInputs): void => {
         sendContact(data)       
     } 
  

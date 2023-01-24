@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { FC } from 'react'
 import styles from './Technologies.module.scss'
 
 
@@ -22,7 +22,7 @@ const technologies = [
      }
 ]
 
-export const Technologies = () => {
+export const Technologies: FC = React.memo(() => {
     return( 
     <section className={styles.technologies}>
         <h2 className={styles.technologies__title}> Programming technologies </h2>
@@ -37,4 +37,4 @@ export const Technologies = () => {
             </ul>
     </section>
     )
-}
+})

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import styles from './Heading.module.scss'
 
-export const Heading = () => {
+export const Heading: FC = React.memo(() => {
     return( 
     <section className={styles.heading}>
         <h1 className={styles.heading__title}> 
@@ -15,4 +15,4 @@ export const Heading = () => {
         <button className={styles.heading__link}>Start my career change</button>
     </section>
     )
-}
+})

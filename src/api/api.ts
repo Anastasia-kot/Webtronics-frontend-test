@@ -3,7 +3,7 @@ import { IFormInputs } from '../components/Contact/Contact';
 
 const instance = axios.create()
  
-export const sendContact =   (formInfo: IFormInputs) => {
+export const sendContact = (formInfo: IFormInputs) => {
       instance
         .post('http://localhost:3004/feedback/', {...formInfo} )
             .then(res => res.data)

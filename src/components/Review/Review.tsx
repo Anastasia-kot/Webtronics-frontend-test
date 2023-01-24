@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import styles from './Review.module.scss'
 
 
@@ -21,8 +21,10 @@ const review = [
     }
 ]
 
-export const Review = () => {
+export const Review: FC = React.memo(() => {
+    
     const [activeItem, setActiveItem] = useState<number>(0)
+    
     const setMin = () => {
         if (activeItem === 0) {
             setActiveItem(review.length-1)
@@ -62,4 +64,4 @@ export const Review = () => {
 
     </section>
     )
-}
+})
